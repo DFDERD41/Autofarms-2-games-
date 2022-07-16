@@ -74,14 +74,14 @@ workspace.ClaimRiverResultsGold:FireServer()
      end
 end)
 end)
-window:Button("Autofarm 1 Unstopable",function()
+window:Button("Tween Autofarm 1",function()
 loadstring(game:HttpGet('https://gist.githubusercontent.com/DFDERD41/c3c75b646419db28a8077c85400ec381/raw/59abbf783c58aa57c7c5fb915b592439981659cd/opscriptnocapbetterthaneveryscript-babft-op-autofarm-script-no-cap'))()
 end)
 
-window:Button("Autofarm 2 Unstopable",function()
+window:Button("Tween Autofarm 2 ",function()
 loadstring(game:HttpGet("https://pastebin.com/raw/AgPMBW3D"))()
 end)
 
-window:Button("Teleport Farm Unstopable",function()
+window:Button("Teleport Farm ",function()
 loadstring(game:HttpGet('https://pastebin.com/raw/dbNBYnZM'))()
 end)
