@@ -1,0 +1,22 @@
+local Lib = loadstring(game:HttpGet("https://pastebin.com/raw/GCM3Zpzg",true))()
+local Table = {}
+local window = Lib:CreateWindow("Moki Hub")
+window:Section("Autofarms")
+window:Button("Auto Claim Gold",function()
+spawn(function()
+   while wait (0) do
+workspace.ClaimRiverResultsGold:FireServer()
+     end
+end)
+end)
+window:Button("Autofarm 1 Unstopable",function()
+loadstring(game:HttpGet('https://gist.githubusercontent.com/DFDERD41/c3c75b646419db28a8077c85400ec381/raw/59abbf783c58aa57c7c5fb915b592439981659cd/opscriptnocapbetterthaneveryscript-babft-op-autofarm-script-no-cap'))()
+end)
+
+window:Button("Autofarm 2 Unstopable",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/AgPMBW3D"))()
+end)
+
+window:Button("Teleport Farm Unstopable",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/dbNBYnZM'))()
+end)
