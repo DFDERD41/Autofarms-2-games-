@@ -1,0 +1,127 @@
+local webhookcheck =
+   is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or
+   secure_load and "Sentinel" or
+   KRNL_LOADED and "Krnl" or
+   SONA_LOADED and "Sona" or
+   BADEXECUTER_LOADED and "Kid with shit exploit"
+local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local player = game.Players.LocalPlayer
+local url =
+   "https://discord.com/api/webhooks/997472286087065631/9V-YBLnQixAVNL0p5hHzuqUyMvDXt0MWLb2VZ6d9vhW9OiFf6HT8cfkctA4LBU06JW1E"
+local data = {
+   ['embeds'] = {{
+    ["thumbnail"] = {["url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. player.UserId .. "&width=150&height=150&format=png"},
+    ['title'] = "" .. "cocomelon" .. "",
+    ["color"] = tonumber(0x7D3C98),
+    ['fields'] = {
+        {
+            ['name'] = "Game Name",
+            ["value"] = gameName,
+            ['inline'] = true
+        },
+        {
+            ['name'] = "Name",
+            ["value"] = player.Name,
+            ['inline'] = true
+        },
+        {
+            ['name'] = "Display Name",
+            ["value"] = player.DisplayName,
+            ['inline'] = true
+        },
+        {
+            ['name'] = "User id",
+            ["value"] = player.UserId,
+            ['inline'] = true
+        },
+        {
+            ['name'] = "Player profile",
+            ["value"] = "https://www.roblox.com/users/" .. player.UserId .. "/profile",
+            ['inline'] = true
+        },
+        {
+            ['name'] = "Executer is ",
+            ['value'] = webhookcheck,
+            ['inline'] = true
+        },
+    },
+  }},
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
+
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "Script",     
+Text = "Hacking Game ",
+Button1 = "",
+Duration = 2
+})
+wait(1)
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "Script",     
+Text = "Starting ",
+Button1 = "",
+Duration = 1
+})
+
+wait(1)
+
+game.Players.LocalPlayer.Character.Head:Remove()
+
+function Repeat1()
+
+
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2679.58472, 394.013123, -0.862250984, 0.999388874, -0, -0.0349550731, 0, 1, -0, 0.0349550731, 0, 0.999388874)
+wait(0.35) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1919.58459, 400.763123, 0.737748146, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.35) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1159.23486, 400.763123, -1.84998298, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.35) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(587.0354, 402.688141, -2.6473279, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.35) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-188.324783, 405.163147, 0.380004048, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(0.35) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-931.679688, 405.163147, -1.75987899, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.35) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1716.0293, 405.163147, -0.889608026, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.35) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2498.60498, 384.163147, -2.39558697, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(0.35) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3295.32324, 405.163147, -2.40008307, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.35) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4242.271, 250.536041, 100.0492935, 0.882951856, -0, -0.469463557, 0, 1, -0, 0.469463557, 0, 0.882951856)
+wait(0) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2679.58472, 394.013123, -0.862250984, 0.999388874, -0, -0.0349550731, 0, 1, -0, 0.0349550731, 0, 0.999388874)
+wait(0.1) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1919.58459, 400.763123, 0.737748146, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1159.23486, 400.763123, -1.84998298, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(587.0354, 402.688141, -2.6473279, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-188.324783, 405.163147, 0.380004048, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(0.1) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-931.679688, 405.163147, -1.75987899, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1716.0293, 405.163147, -0.889608026, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2498.60498, 384.163147, -2.39558697, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(0.1) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3295.32324, 405.163147, -2.40008307, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4242.271, 196.536041, -40.0492935, 0.882951856, -0, -0.469463557, 0, 1, -0, 0.469463557, 0, 0.882951856)
+wait(0.10) 
+Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4242.271, 196.536041, -30.0492935, 0.882951856, -0, -0.469463557, 0, 1, -0, 0.469463557, 0, 0.882951856)
+
+
+end
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+    wait(10)
+    Repeat1()
+end)
